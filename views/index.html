@@ -1,0 +1,123 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="nightlife coordination">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
+          crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="container-fluid">
+      <h1 class="page-title text-center">
+        Nighlife coordination
+      </h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9"></div>
+          <div class="col-md-3 text-center">
+            <form class="logout-form" action="/logout" method="get">
+              <label class="account-name">Welcome, </label>
+              <button type="submint">
+                Logout
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <form class="search input-group" action="/search" method="get">
+              <input type="text" maxlength="100" placeholder="city" name="location" class="form-control" required>           
+              <span class="input-group-btn"><button type="submit" class="btn">
+                Search
+              </button></span>
+            </form>
+            <div class="row bar-list">
+              <div class="col col-12">
+                <h3 class="display-location"></h3>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="row text-center">
+          <div class="col-md-4"></div>
+          <div class="col-md-2 col-6 switch login-switch">
+            Login
+          </div>
+          <div class="col-md-2 col-6 switch signup-switch">
+            Signup
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="row login-row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 account-wall">
+            <form action= "/login" method= "post" class="login-form">
+              <label></label>
+              <input type="text" maxlength="100" placeholder="username" name="username" class="form-control">
+              <input type="password" maxlength="100" placeholder="password" name="password" class="form-control">
+              <label></label>
+              <button type="submit" class="btn btn-block btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        
+        <div class="row signup-row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 account-wall">
+            <form action= "/signup" method= "post" class="signup-form">
+              <label></label>
+              <input type="text" maxlength="100" placeholder="username" name="username" class="form-control">
+              <input type="password" maxlength="100" placeholder="password" name="password" class="form-control"> 
+              <label></label>
+              <button type="submit" class="btn btn-block btn-primary">Signup</button>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <small>*data from Yelp</small>
+      <p>
+        by Michelino
+      </p>
+
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" 
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" 
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" 
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" 
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+
+</html>
