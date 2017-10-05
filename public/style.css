@@ -1,0 +1,146 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+html {
+  position: relative;
+  min-height: 100%;
+  background: #2BBBAD;
+}
+
+footer{
+  background-color: #e0e0e0;
+  padding-top: 10px;
+  padding-left: 100px;
+  color: grey;
+  border-top: solid;
+  border-color: grey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+main {
+  background: #2BBBAD;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+header {
+  padding: 20px;
+  background: #00695c;
+}
+.account-wall{
+  background-color: #00695c;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+.display-location{
+  color: #00695c;
+  text-shadow: 0px 0px 3px white;
+  margin-bottom: 20px;
+}
+.count{
+  position: absolute;
+  color: #2BBBAD;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border-width: 5px;
+  border-color: #00695c;
+  right: 5px;
+  top: 5px;
+  padding-top: 10px;
+}
+.page-title {
+  color: white;
+}
+.place-name, .categories {
+  position: absolute;
+  right: 50px;
+  left: 120px;
+  color: white;
+}
+.categories{
+  bottom: 20px;
+}
+.place-name {
+  font-size: 20px;
+}
+.categories {
+  font-size: 12px;
+  color: #2BBBAD;
+}
+.search {
+  margin-bottom: 20px;
+}
+.account-name{
+  color: white
+}
+.go-place, .remove-place {
+  background: white;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 3%;
+  border-width: 5px;
+  padding: 5px;
+}
+
+.go-place {
+  border-color: #00695c;
+  color: white;
+  width: 50px;
+  background: #2BBBAD;
+}
+
+.remove-place {
+  border-color: #9933CC;
+  color: #9933CC;
+  width: 100px;
+  color: white;
+  background: #aa66cc;
+}
+
+.go-place:hover, .remove-place:hover {
+  opacity: 0.5;
+}
+
+.login-form, .logout-form, .search, .signup-form, .switch {
+  display: none;
+}
+
+.thumb-img {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+  float: left;
+}
+
+.place-block{
+  background: #00695c;
+  padding: 20px;
+  border-style: solid;
+  border-color: #2BBBAD;
+  border-width: 2px;
+}
+
+.switch{
+  background: #00695c;
+  color: white;
+}
+
+.back{
+  opacity: 0.5;
+}
+
+.signup-switch{
+  border-top-right-radius: 2%;
+}
+.login-switch{
+  border-top-left-radius: 2%;
+}
