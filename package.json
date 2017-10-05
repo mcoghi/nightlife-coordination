@@ -1,10 +1,7 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   
   "name": "mhl-nighlife-coordination",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An app tha lets you find out where the people in your area is going tonight",
   "main": "server.js",
   "scripts": {
@@ -18,14 +15,14 @@
     "express-session": "^1.15.6",
     "mongodb": "^2.2.31",
     "passport": "^0.4.0",
-    "passport-local": "*",
+    "passport-local": "^1.0.0",
     "yelp-fusion": "^1.0.3"
   },
   "engines": {
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/welcome-project"
+    "url": "https://github.com/mcoghi/nightlife-coordination"
   },
   "license": "MIT",
   "keywords": [

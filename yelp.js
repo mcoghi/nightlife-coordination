@@ -3,6 +3,9 @@
 var yelp = require('yelp-fusion')
   , config = require('./credentials.js');
 
+///////////////////////////////////////////
+// connect to yelp and search for a city //
+///////////////////////////////////////////
 
 function searchYelp(searchRequest, callBack){
 
@@ -29,8 +32,7 @@ function searchYelp(searchRequest, callBack){
    
 }
 
-
-// export useful stuff
+// export the function
 
 module.exports = {
   searchYelp : searchYelp

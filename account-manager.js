@@ -104,7 +104,7 @@ module.exports = function(app, passport){
         // find a user in Mongo with provided username
         db.findUser({'username': username}, function(err, user) {
         
-          // In case of any error return
+          // In case of any error return it
           if (err){
             console.log('Error in SignUp: ' + err);
             return done(err);
@@ -114,6 +114,7 @@ module.exports = function(app, passport){
           if (user) {
         
             console.log('User already exists');
+            
             return done(null, false, {message : 'User Already Exists'});
         
           } else {

@@ -24,7 +24,7 @@ module.exports = function(passport){
   // SIGN UP REQUEST //
   router.post("/signup", passport.authenticate("signup", {
     successRedirect : "/",
-    failurRedirect : "/"
+    failureRedirect : "/"
   }))
   
   // LOG IN //
@@ -75,7 +75,7 @@ module.exports = function(passport){
   })
   
 
-  // get data from yelp
+  // GET DATA FROM YELP
   router.get("/data", function (req, res){
     
     if (req.user){
